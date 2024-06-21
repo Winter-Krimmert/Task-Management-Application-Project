@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taskify - Task Management Application</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">TaskFlow</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="task_dashboard_page.html">Tasks</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="login_page.html">Login</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="registration_page.html">Registration</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid bg-dark text-white">
+    <div class="container text-center">
+      <h1 class="display-4">TaskFlow</h1>
+      <p class="lead">Your comprehensive task manager.</p>
+    </div>
+  </div>
+
+  <!-- Task Creation Page -->
+  <section class="container my-5">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Task Creation</h5>
+            <form>
+              <div class="mb-3">
+                <label for="taskName" class="form-label">Task Name</label>
+                <input type="text" class="form-control" id="taskName" required>
+              </div>
+              <div class="mb-3">
+                <label for="taskDescription" class="form-label">Task Description</label>
+                <textarea class="form-control" id="taskDescription" rows="3" required></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="dueDate" class="form-label">Due Date</label>
+                <input type="date" class="form-control" id="dueDate" required>
+              </div>
+              <div class="mb-3">
+                <label for="assignedTo" class="form-label">Assigned To</label>
+                <input type="text" class="form-control" id="assignedTo" required>
+              </div>
+              <div class="mb-3">
+                <label for="priority" class="form-label">Priority</label>
+                <select class="form-control" id="priority" required>
+                  <option value="High">High</option>
+                  <option value="Medium">Medium</option>
+                  <option value="Low">Low</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Add Task</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap -->
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

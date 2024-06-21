@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">TaskFlow</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="task_dashboard_page.html">Tasks</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="login_page.html">Login</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="registration_page.html">Registration</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid bg-dark text-white">
+    <div class="container text-center">
+      <h1 class="display-4">TaskFlow</h1>
+      <p class="lead">- Dashboard -</p>
+    </div>
+  </div>
+
+  <!-- Task Dashboard Page -->
+  <section class="container my-5">
+    <div class="row">
+      <!-- Task 1 Card -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Task 1</h5>
+            <p class="card-text">Brief description of Task 1.</p>
+            <span class="badge badge-primary badge-status">High Priority</span>
+            <span class="badge badge-warning badge-status">Pending</span>
+            <a href="task_details_task1.html" class="btn btn-primary mt-3">View Details</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Task 2 Card -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Task 2</h5>
+            <p class="card-text">Brief description of Task 2.</p>
+            <span class="badge badge-primary badge-status">Low Priority</span>
+            <span class="badge badge-info badge-status">In Review</span>
+            <a href="task_details_task2.html" class="btn btn-primary mt-3">View Details</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Task 3 Card -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Task 3</h5>
+            <p class="card-text">Brief description of Task 3.</p>
+            <span class="badge badge-primary badge-status">Medium Priority</span>
+            <span class="badge badge-success badge-status">Completed</span>
+            <a href="task_details_task3.html" class="btn btn-primary mt-3">View Details</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Bootstrap -->
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

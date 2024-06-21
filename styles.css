@@ -1,0 +1,166 @@
+/* Custom styles for the task management application */
+
+/* Navbar styles */
+.navbar {
+  background-color: #343a40 !important;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+.navbar-toggler-icon {
+  color: #fff; /* Adjust the color of the toggler icon if needed */
+}
+
+/* Jumbotron styles */
+.jumbotron {
+  background-color: #0d2339 !important;
+  color: #fff; /* Adjust text color for better contrast */
+}
+
+/* Card styles */
+.card {
+  border: 1px solid #ced4da; /* Add a solid border for cards */
+  transition: transform 0.3s;
+  margin-bottom: 20px; /* Adjust margin bottom for spacing between cards */
+}
+
+/* Additional Styles for Task Dashboard */
+
+/* Center and add margin to buttons */
+.card-body {
+  text-align: center; /* Center align content */
+}
+
+.card-body .btn {
+  margin-top: 8px; /* Add margin to top of buttons */
+}
+
+.badge-status {
+  display: inline-block; /* Ensures each badge takes up only as much width as its content */
+  width: auto; /* Ensures badges adjust width dynamically based on content */
+}
+
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-text {
+  color: #6c757d;
+}
+
+
+/* task details_page */
+
+.btn-secondary {
+  color: #fff; /* Text color */
+  background-color: #007bff; /* Button background color */
+  border-color: #007bff; /* Button border color */
+}
+
+.btn-secondary:hover {
+  color: #fff; /* Text color on hover */
+  background-color: #0069d9; /* Button background color on hover */
+  border-color: #0062cc; /* Button border color on hover */
+}
+
+/*Badges*/
+
+/* Custom styles for badges */
+.badge {
+  margin-right: 5px; /* Adjust spacing between badges */
+  font-size: 0.9rem; /* Adjust font size */
+  padding: 8px 10px; /* Adjust padding */
+}
+
+.badge-primary {
+  background-color: #007bff; /* Blue color for high priority */
+}
+
+.badge-success {
+  background-color: #28a745; /* Green color for completed */
+}
+
+.badge-warning {
+  background-color: #ffc107; /* Yellow color for in progress */
+}
+
+.badge-danger {
+  background-color: #dc3545; /* Red color for urgent */
+}
+
+.badge-secondary {
+  background-color: #6c757d; /* Gray color for low priority */
+}
+
+/* Button Styles */
+.btn-custom {
+  /* Base button styles */
+  padding: 8px 16px;
+  font-size: 16px; /* Adjust font size in pixels */
+  border-radius: 4px;
+  text-decoration: none; /* Remove underline from anchor tags */
+}
+
+.btn-custom-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff; /* Text color for primary button */
+}
+
+/* Badge Styles */
+.badge-custom {
+  /* Base badge styles */
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.badge-custom-primary {
+  background-color: #007bff;
+  color: #fff; /* Text color for primary badge */
+}
+
+.badge-custom-warning {
+  background-color: #ff0707;
+  color: #ffffff; /* Text color for warning badge */
+}
+
+.badge-custom-complete {
+  background-color: #28a745;
+  color: #fff; /* Text color for completed badge */
+}
+
+/* Ensure card content is vertically stacked at smaller screen sizes */
+@media (max-width: 576px) {
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .badge-status {
+    display: inline-block;
+    width: auto;
+    margin-bottom: 5px; /* Add margin to bottom to separate badges */
+  }
+
+  .btn {
+    margin-top: 8px; /* Add margin to top of the button */
+  }
+
+  .card-title,
+  .card-text {
+    display: block;
+    width: 100%;
+  }
+}
